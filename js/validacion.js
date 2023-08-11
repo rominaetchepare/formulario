@@ -24,8 +24,9 @@ function validate() {
     var name = document.getElementById("nombre").value;
     var surename = document.getElementById("apellido").value;
     var email = document.getElementById("email").value;
+    var terminos = document.getElementById("terminos").checked;
     
-    if (name && surename && email && validatePassword()) {
+    if (name && surename && email && validatePassword() && terminos) {
          showAlertSuccess()
     } else { showAlertError()}
 }
